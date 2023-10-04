@@ -3,8 +3,7 @@
 # Description: Easily install and manage packages published directly from their authors
 # Dependencies: curl, GNU coreutils, grep, jq
 # Will be installed if missing: deb2appimage (disabled until feature finished)
-# Author: simonizor
-# Website: http://www.simonizor.net
+# Author: simonizor, drsheppard
 # License: GPL v2.0 only
 
 # Function to handle all exits
@@ -82,7 +81,7 @@ function trywithoutsudo() {
     local TEST_DIR="$1"
     shift
     local COMMAND="$@"
-    [ -z "$COMMAND" ] && spmexit "2" "$(tput setaf $CLR_RED)COMMAND variable is empty$(tput sgr0)" "Please report an issue at https://github.com/simoniz0r/spm"
+    [ -z "$COMMAND" ] && spmexit "2" "$(tput setaf $CLR_RED)COMMAND variable is empty$(tput sgr0)" "Please report an issue at https://github.com/Drsheppard01/spm"
     if [ -w "$TEST_DIR" ]; then
         $COMMAND || { spmexit "2" "$(tput setaf $CLR_RED)The following failed to execute:$(tput sgr0)" "$COMMAND"; }
     else
@@ -368,7 +367,7 @@ function installpackage() {
             spmexit "2" "$(tput setaf $CLR_RED)Exiting...$(tput sgr0)" "$PACKAGE was not installed."
             ;;
     esac
-    curl -L -o "$CONFIG_DIR"/cache/"$PACKAGE".AppImage "$PACKAGE_LATEST_URL" || { spmexit "4" "$(tput setaf $CLR_RED)Error installing $PACKAGE!$(tput sgr0)" "If this continues to happen, please report an issue at https://github.com/simoniz0r/spm$(tput sgr0)"; }
+    curl -L -o "$CONFIG_DIR"/cache/"$PACKAGE".AppImage "$PACKAGE_LATEST_URL" || { spmexit "4" "$(tput setaf $CLR_RED)Error installing $PACKAGE!$(tput sgr0)" "If this continues to happen, please report an issue at https://github.com/Drsheppard01/spm$(tput sgr0)"; }
     chmod a+x "$CONFIG_DIR"/cache/"$PACKAGE".AppImage
     trywithoutsudo "$TARGET_DIR" "mv $CONFIG_DIR/cache/$PACKAGE.AppImage $TARGET_DIR/$PACKAGE"
     saveappimageinfo "$PACKAGE"
@@ -420,7 +419,7 @@ function getappimage() {
     PACKAGE_TAG="$(echo "$PACKAGE_LATEST_URL" | cut -f8 -d"/")"
     echo
     echo "$(tput setaf $CLR_GREEN)Downloading $(tput setaf $CLR_LGREEN)$PACKAGE$(tput setaf $CLR_GREEN) Version: $PACKAGE_TAG - Release date: $NEW_PACKAGE_VERSION to $GET_DIR ...$(tput sgr0)"
-    curl -L -o "$CONFIG_DIR"/cache/"$PACKAGE"-"$PACKAGE_TAG" "$PACKAGE_LATEST_URL" || { spmexit "4" "$(tput setaf $CLR_RED)Error downloading $PACKAGE!$(tput sgr0)" "If this continues to happen, please report an issue at https://github.com/simoniz0r/spm$(tput sgr0)"; }
+    curl -L -o "$CONFIG_DIR"/cache/"$PACKAGE"-"$PACKAGE_TAG" "$PACKAGE_LATEST_URL" || { spmexit "4" "$(tput setaf $CLR_RED)Error downloading $PACKAGE!$(tput sgr0)" "If this continues to happen, please report an issue at https://github.com/Drsheppard01/spm$(tput sgr0)"; }
     chmod a+x "$CONFIG_DIR"/cache/"$PACKAGE"-"$PACKAGE_TAG"
     trywithoutsudo "$GET_DIR" "mv $CONFIG_DIR/cache/$PACKAGE-$PACKAGE_TAG $GET_DIR/$PACKAGE-$PACKAGE_TAG"
     echo
@@ -460,7 +459,7 @@ function removepackage() {
     displaymessage "$(tput setaf $CLR_RED)$PACKAGE$(tput setaf $CLR_RED) removed$(tput sgr0)" "$PACKAGE has been removed from $TARGET_DIR/$PACKAGE !"
 }
 
-# Function that uses jq and csplit to parse https://github.com/simoniz0r/spm/releases/download/feed/spm-feed.json into a usable format
+# Function that uses jq and csplit to parse https://github.com/Drsheppard01/spm/releases/download/feed/spm-feed.json into a usable format
 # The CONFIG_DIR/list directory is first moved to the CONFIG_DIR/cache directory incase of failure
 # jq outputs feed.json in a clean form, csplit splits feed.json into separate files for each package
 # Separated json files are then checked for valid links; json files without valid links are removed
@@ -470,7 +469,7 @@ function removepackage() {
 # If the above succeeded, the stored list dir in CONFIG_DIR/cache is deleted; if not, it is moved back
 function updatelist() {
     [ -f "$CONFIG_DIR/list/.listversion" ] && . "$CONFIG_DIR"/list/.listversion || LIST_VERSION="null"
-    NEW_LIST_VERSION="$(curl -sSL "https://github.com/simoniz0r/spm/releases/download/feed/spm-feed.json" | jq -r '.updated_at')"
+    NEW_LIST_VERSION="$(curl -sSL "https://github.com/Drsheppard01/spm/releases/download/feed/spm-feed.json" | jq -r '.updated_at')"
     if [ ! "$LIST_VERSION" = "$NEW_LIST_VERSION" ]; then
         PACKAGES_AVAILABLE="$(ls -C -w 1 "$CONFIG_DIR"/list)"
         printf '\e[?25l' # Hide cursor to prevent progress bar looking glitchy
@@ -478,8 +477,8 @@ function updatelist() {
         mv "$CONFIG_DIR"/list/ "$CONFIG_DIR"/cache/
         mkdir "$CONFIG_DIR"/list
         cd "$CONFIG_DIR"/list
-        curl -sSL "https://github.com/simoniz0r/spm/releases/download/feed/spm-feed.json" | jq '.appimages[]' | csplit --digits=3 --quiet --prefix=appimage --suffix-format=%02d.json - "/^{/" "{*}" \
-        || { rm -rf "$CONFIG_DIR"/list; mv "$CONFIG_DIR"/cache/list "$CONFIG_DIR"/list; spmexit "5" "$(tput setaf $CLR_RED)Error updating package list!$(tput sgr0)" "If this continues to happen, please report an issue at https://github.com/simoniz0r/spm$(tput sgr0)"; }
+        curl -sSL "https://github.com/Drsheppard01/spm/releases/download/feed/spm-feed.json" | jq '.appimages[]' | csplit --digits=3 --quiet --prefix=appimage --suffix-format=%02d.json - "/^{/" "{*}" \
+        || { rm -rf "$CONFIG_DIR"/list; mv "$CONFIG_DIR"/cache/list "$CONFIG_DIR"/list; spmexit "5" "$(tput setaf $CLR_RED)Error updating package list!$(tput sgr0)" "If this continues to happen, please report an issue at https://github.com/Drsheppard01/spm$(tput sgr0)"; }
         rm -rf "$CONFIG_DIR"/cache/*
         rm -f "$CONFIG_DIR"/list/appimage00.json
         NUM_PACKAGES="$(ls -C -w 1 "$CONFIG_DIR"/list | wc -l)"
@@ -756,7 +755,7 @@ function spmhelp() {
 printf '%s\n' "spm 0.2.05
 Usage: spm [option] [package]
 spm is a command line package manager provides packages in AppImage format.
-spm uses https://github.com/simoniz0r/spm/releases/download/feed/spm-feed.json
+spm uses https://github.com/Drsheppard01/spm/releases/download/feed/spm-feed.json
 to get information about packages.
 
 Arguments:
@@ -774,7 +773,7 @@ Additional Arguments:
     [list|info] --installed|-i   - show list or info for installed packages
     --debug [option] [package]   - add bash option 'set -x' for debugging
 
-See https://github.com/simoniz0r/spm for more help or to report issues.
+See https://github.com/Drsheppard01/spm for more help or to report issues.
 spm is not responsible for bugs within packages that have been
 installed using spm.  Please report any bugs that are specific to
 installed packages to their maintainers."
@@ -916,7 +915,7 @@ if [ -f "$TARGET_DIR/spm" ] && [ ! -f "$HOME/.local/share/spm/no-tab-completion"
             if type zsh > /dev/null 2>&1; then
                 [ ! -d "/usr/local/share/zsh/site-functions" ] && sudo mkdir -p /usr/local/share/zsh/site-functions
                 # Download zsh-completion.sh from spm's github repo
-                curl -sSL "https://raw.githubusercontent.com/simoniz0r/spm/master/zsh-completion.sh" -o "$CONFIG_DIR"/cache/zsh-completion.sh || \
+                curl -sSL "https://raw.githubusercontent.com/Drsheppard01/spm/master/zsh-completion.sh" -o "$CONFIG_DIR"/cache/zsh-completion.sh || \
                 { echo "$(tput setaf $CLR_RED)Failed to download 'zsh-completion.sh'!"; ZSH_FAILED="TRUE"; }
                 if [ ! "$ZSH_FAILED" = "TRUE" ]; then
                     # If download did not fail and site-functions dir exists, move tab completion file there
@@ -931,7 +930,7 @@ if [ -f "$TARGET_DIR/spm" ] && [ ! -f "$HOME/.local/share/spm/no-tab-completion"
             [ ! -d "/etc/bash_completion.d" ] && sudo mkdir -p /etc/bash_completion.d
             if [ ! -f "/etc/bash_completion.d/spm.sh" ]; then
                 # Download bash-completion.sh from spm's github repo
-                curl -sSL "https://raw.githubusercontent.com/simoniz0r/spm/master/bash-completion.sh" -o "$CONFIG_DIR"/cache/bash-completion.sh || \
+                curl -sSL "https://raw.githubusercontent.com/Drsheppard01/spm/master/bash-completion.sh" -o "$CONFIG_DIR"/cache/bash-completion.sh || \
                 { echo "$(tput setaf $CLR_RED)Failed to download 'bash-completion.sh'!"; BASH_FAILED="TRUE"; }
                 if [ ! "$BASH_FAILED" = "TRUE" ]; then
                     # If download did not fail, move tab completion file to /etc/bash_completion.d/spm.sh
