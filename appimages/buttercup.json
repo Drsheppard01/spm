@@ -2,7 +2,7 @@
   "name": "buttercup",
   "installname": "buttercup",
   "type": "AppImage",
-  "description": "buttercup-desktop - key Javascript Password Vault - Multi-Platform Desktop Application",
+  "description": "Cross-Platform Passwords & Secrets Vault",
   "authors": [
     {
       "name": "buttercup",

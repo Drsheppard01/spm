@@ -1,0 +1,30 @@
+{
+    "name": "0ad",
+    "installname": "0ad",
+    "type": "AppImage",
+    "description": "0 A.D.is a free, open-source, cross-platform real-time strategy game of ancient warfare",
+    "authors": [
+      {
+        "name": "0ad-matters",
+        "url": "https://github.com/0ad-matters"
+      }
+    ],
+    "links": [
+      {
+        "type": "GitHub",
+        "url": "0ad-matters/0ad-appimage"
+      },
+      {
+        "type": "Install",
+        "url": "https://github.com/0ad-matters/0ad-appimage/releases"
+      }
+    ],
+    "installinfo": [
+      {
+        "version": "Not Installed",
+        "size": "Not Installed",
+        "tag": "Not Installed",
+        "status": "Not Installed"
+      }
+    ]
+  }

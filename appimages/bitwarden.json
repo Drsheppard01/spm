@@ -1,8 +1,8 @@
 {
-  "name": "Bitwarden_Connector",
-  "installname": "bitwarden_connector",
+  "name": "bitwarden",
+  "installname": "bitwarden",
   "type": "AppImage",
-  "description": "Sync your user directory to your Bitwarden organization.",
+  "description": "Open source password management solutions for individuals, teams, and business organizations.",
   "authors": [
     {
       "name": "bitwarden",
@@ -12,11 +12,11 @@
   "links": [
     {
       "type": "GitHub",
-      "url": "bitwarden/directory-connector"
+      "url": "bitwarden/clients"
     },
     {
       "type": "Download",
-      "url": "https://github.com/bitwarden/directory-connector/releases"
+      "url": "https://github.com/bitwarden/clients/releases"
     }
   ],
   "installinfo": [

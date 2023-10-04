@@ -2,7 +2,7 @@
   "name": "caprine",
   "installname": "caprine",
   "type": "AppImage",
-  "description": "caprine - Elegant Facebook Messenger desktop app",
+  "description": "Elegant Facebook Messenger desktop app",
   "authors": [
     {
       "name": "sindresorhus",

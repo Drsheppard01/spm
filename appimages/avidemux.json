@@ -2,21 +2,21 @@
   "name": "Avidemux",
   "installname": "Avidemux",
   "type": "AppImage",
-  "description": "AppImage for Avidemux",
+  "description": "Avidemux is a free video editor designed for simple cutting, filtering and encoding tasks.",
   "authors": [
     {
-      "name": "http://www.avidemux.org/nightly/appImage",
-      "url": "http://www.avidemux.org/nightly/appImage"
+      "name": "mean00",
+      "url": "https://github.com/mean00"
     }
   ],
   "links": [
     {
-      "type": "Other",
-      "url": "http://www.avidemux.org/nightly/appImage"
+      "type": "GitHub",
+      "url": "mean00/avidemux2/"
     },
     {
       "type": "Install",
-      "url": "http://www.avidemux.org/nightly/appImage/avidemuxUniversal_amd64_170814_112.app"
+      "url": "https://github.com/mean00/avidemux2/releases"
     }
   ],
   "installinfo": [

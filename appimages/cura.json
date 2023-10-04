@@ -2,21 +2,21 @@
   "name": "Cura",
   "installname": "Cura",
   "type": "AppImage",
-  "description": "Ultimaker Cura prepares your model for 3D printing",
+  "description": "State-of-the-art slicer app to prepare  your 3D models for your 3D printer",
   "authors": [
     {
       "name": "Ultimaker",
-      "url": "https://ultimaker.com/en/products/ultimaker-cura-software"
+      "url": "https://github.com/Ultimaker"
     }
   ],
   "links": [
     {
-      "type": "Other",
-      "url": "https://software.ultimaker.com/current"
+      "type": "GitHub",
+      "url": "Ultimaker/Cura"
     },
     {
       "type": "Install",
-      "url": "https://software.ultimaker.com/current/Cura-3.3.1.AppImage"
+      "url": "https://github.com/Ultimaker/Cura/releases"
     }
   ],
   "installinfo": [

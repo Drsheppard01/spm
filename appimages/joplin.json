@@ -2,7 +2,7 @@
   "name": "Joplin",
   "installname": "joplin",
   "type": "AppImage",
-  "description": "Joplin for Desktop",
+  "description": "Open source note taking and to-do application with synchronisation capabilities",
   "authors": [
     {
       "name": "laurent22",

@@ -1,0 +1,31 @@
+{
+    "name": "Acreom",
+    "installname": "acreom",
+    "type": "AppImage",
+    "description": "acreom is a powerful knowledge base integrated with time management running on local markdown files.",
+    "authors": [
+      {
+        "name": "Acreom",
+        "url": "https://github.com/Acreom/"
+      }
+    ],
+    "links": [
+      {
+        "type": "Acreom",
+        "url": "Acreom/releases"
+      },
+      {
+        "type": "Install",
+        "url": "https://github.com/Acreom/releases/releases"
+      }
+    ],
+    "installinfo": [
+      {
+        "version": "Not Installed",
+        "size": "Not Installed",
+        "tag": "Not Installed",
+        "status": "Not Installed"
+      }
+    ]
+  }
+  

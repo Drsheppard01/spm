@@ -2,21 +2,21 @@
   "name": "appimaged",
   "installname": "appimaged",
   "type": "AppImage",
-  "description": "AppImageKit - Package desktop applications as AppImages that run on common Linux-based operating systems such as RHEL CentOS openSUSE SLED Ubuntu Fedora debian and derivatives Join AppImage on ircfreenodenet",
+  "description": "Go implementation of AppImage tools. Still experimental",
   "authors": [
     {
-      "name": "AppImage",
-      "url": "https://github.com/AppImage"
+      "name": "probonopd",
+      "url": "https://github.com/probonopd"
     }
   ],
   "links": [
     {
       "type": "GitHub",
-      "url": "AppImage/AppImageKit"
+      "url": "probonopd/go-appimage"
     },
     {
       "type": "Install",
-      "url": "https://github.com/AppImage/AppImageKit/releases"
+      "url": "https://github.com/probonopd/go-appimage/releases"
     }
   ],
   "installinfo": [

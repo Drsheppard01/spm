@@ -2,7 +2,7 @@
   "name": "hotspot",
   "installname": "hotspot",
   "type": "AppImage",
-  "description": "hotspot - The Linux perf GUI for performance analysis",
+  "description": "The Linux perf GUI for performance analysis",
   "authors": [
     {
       "name": "KDAB",

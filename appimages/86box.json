@@ -1,0 +1,31 @@
+{
+    "name": "86box",
+    "installname": "86box",
+    "type": "AppImage",
+    "description": "Emulator of x86-based machines based on PCem.",
+    "authors": [
+      {
+        "name": "86Box",
+        "url": "https://github.com/86Box/"
+      }
+    ],
+    "links": [
+      {
+        "type": "86Box",
+        "url": "86Box/releases"
+      },
+      {
+        "type": "Install",
+        "url": "https://github.com/86Box/86Box/releases"
+      }
+    ],
+    "installinfo": [
+      {
+        "version": "Not Installed",
+        "size": "Not Installed",
+        "tag": "Not Installed",
+        "status": "Not Installed"
+      }
+    ]
+  }
+  

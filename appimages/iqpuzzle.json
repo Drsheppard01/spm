@@ -11,12 +11,12 @@
   ],
   "links": [
     {
-      "type": "GitHub",
-      "url": "ElTh0r0/iqpuzzle"
+      "type": "Other",
+      "url": "https://download.opensuse.org/repositories/home:/ElThoro/AppImage"
     },
     {
       "type": "Install",
-      "url": "https://github.com/ElTh0r0/iqpuzzle/releases"
+      "url": "https://download.opensuse.org/repositories/home:/ElThoro/AppImage/iQPuzzle-latest-x86_64.AppImage"
     }
   ],
   "installinfo": [

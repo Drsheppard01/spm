@@ -5,18 +5,18 @@
   "description": "AppImageUpdate lets you update AppImages in a decentral way using information embedded in the AppImage itself",
   "authors": [
     {
-      "name": "AppImage",
-      "url": "https://github.com/AppImage"
+      "name": "AppImageCommunity",
+      "url": "https://github.com/AppImageCommunity"
     }
   ],
   "links": [
     {
       "type": "GitHub",
-      "url": "AppImage/AppImageUpdate"
+      "url": "AppImageCommunity/AppImageUpdate"
     },
     {
       "type": "Install",
-      "url": "https://github.com/AppImage/AppImageUpdate/releases"
+      "url": "https://github.com/AppImageCommunity/AppImageUpdate/releases"
     }
   ],
   "installinfo": [

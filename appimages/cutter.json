@@ -2,21 +2,21 @@
   "name": "Cutter",
   "installname": "Cutter",
   "type": "AppImage",
-  "description": "cutter - A Qt and C GUI for radare2 reverse engineering framework",
+  "description": "Free and Open Source Reverse Engineering Platform powered by rizin",
   "authors": [
     {
-      "name": "radareorg",
-      "url": "https://github.com/radareorg"
+      "name": "rizinorg",
+      "url": "https://github.com/rizinorg"
     }
   ],
   "links": [
     {
       "type": "GitHub",
-      "url": "radareorg/cutter"
+      "url": "rizinorg/cutter"
     },
     {
       "type": "Install",
-      "url": "https://github.com/radareorg/cutter/releases"
+      "url": "https://github.com/rizinorg/cutter/releases"
     }
   ],
   "installinfo": [

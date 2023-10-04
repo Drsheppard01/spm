@@ -2,21 +2,21 @@
   "name": "hyper",
   "installname": "hyper",
   "type": "AppImage",
-  "description": "hyper - A terminal built on web technologies",
+  "description": "A terminal built on web technologies",
   "authors": [
     {
-      "name": "zeit",
-      "url": "https://github.com/zeit"
+      "name": "Vercel",
+      "url": "https://github.com/vercel"
     }
   ],
   "links": [
     {
       "type": "GitHub",
-      "url": "zeit/hyper"
+      "url": "vercel/hyper"
     },
     {
       "type": "Install",
-      "url": "https://github.com/zeit/hyper/releases"
+      "url": "https://github.com/vercel/hyper/releases"
     }
   ],
   "installinfo": [

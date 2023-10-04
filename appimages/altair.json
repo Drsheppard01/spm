@@ -5,18 +5,18 @@
   "description": "altair -  A beautiful feature-rich GraphQL Client for all platforms",
   "authors": [
     {
-      "name": "imolorhe",
-      "url": "https://github.com/imolorhe"
+      "name": "altair-graphql",
+      "url": "https://github.com/altair-graphql"
     }
   ],
   "links": [
     {
       "type": "GitHub",
-      "url": "imolorhe/altair"
+      "url": "altair-graphql/altair"
     },
     {
       "type": "Install",
-      "url": "https://github.com/imolorhe/altair/releases"
+      "url": "https://github.com/altair-graphql/altairreleases"
     }
   ],
   "installinfo": [

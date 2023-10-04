@@ -5,18 +5,18 @@
   "description": "insomnia - The most intuitive cross-platform REST API Client ",
   "authors": [
     {
-      "name": "getinsomnia",
-      "url": "https://github.com/getinsomnia"
+      "name": "Kong",
+      "url": "https://github.com/Kong"
     }
   ],
   "links": [
     {
       "type": "GitHub",
-      "url": "getinsomnia/insomnia"
+      "url": "Kong/insomnia"
     },
     {
       "type": "Install",
-      "url": "https://github.com/getinsomnia/insomnia/releases"
+      "url": "https://github.com/Kong/insomnia/releases"
     }
   ],
   "installinfo": [

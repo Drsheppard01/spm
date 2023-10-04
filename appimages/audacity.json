@@ -2,21 +2,21 @@
   "name": "Audacity",
   "installname": "Audacity",
   "type": "AppImage",
-  "description": "AppImage for Audacity",
+  "description": "Audacity is an easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems. Audacity is free, open source software",
   "authors": [
     {
-      "name": "https://bintray.com/probono/AppImages",
-      "url": "https://bintray.com/probono/AppImages"
+      "name": "audacity",
+      "url": "https://github.com/audacity"
     }
   ],
   "links": [
     {
-      "type": "Other",
-      "url": "https://bintray.com/probono/AppImages"
+      "type": "GitHub",
+      "url": "audacity/audacity"
     },
     {
       "type": "Install",
-      "url": "https://bintray.com/probono/AppImages/download_file?file_path=Audacity-2.1.2.glibc2.15-x86_64.AppImage"
+      "url": "https://github.com/audacity/audacity/releases"
     }
   ],
   "installinfo": [

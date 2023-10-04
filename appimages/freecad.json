@@ -2,7 +2,7 @@
   "name": "FreeCAD",
   "installname": "FreeCAD",
   "type": "AppImage",
-  "description": "This is the official source code of FreeCAD a free and opensource multiplatform 3D parametric modeler",
+  "description": "FreeCAD a free and opensource multiplatform 3D parametric modeler",
   "authors": [
     {
       "name": "FreeCAD",

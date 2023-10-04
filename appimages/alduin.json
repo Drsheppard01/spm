@@ -2,11 +2,11 @@
   "name": "Alduin",
   "installname": "Alduin",
   "type": "AppImage",
-  "description": "alduin - An RSS Atom and JSON  feed aggregator available on Windows and Linux",
+  "description": "Alduin is a free and open source RSS, Atom and JSON feed reader that allows you to keep track of your favorite websites.",
   "authors": [
     {
-      "name": "Xstoudi",
-      "url": "https://github.com/Xstoudi"
+      "name": "AlduinApp",
+      "url": "https://github.com/AlduinApp"
     }
   ],
   "links": [
@@ -16,7 +16,7 @@
     },
     {
       "type": "Install",
-      "url": "https://github.com/Xstoudi/alduin/releases"
+      "url": "https://github.com/AlduinApp/alduin/releases"
     }
   ],
   "installinfo": [

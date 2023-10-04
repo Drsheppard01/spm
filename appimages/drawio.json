@@ -2,7 +2,7 @@
   "name": "drawio",
   "installname": "drawio",
   "type": "AppImage",
-  "description": "drawio-desktop - Official electron build of drawio",
+  "description": "Draw.io is a JavaScript, client-side editor for general diagramming and whiteboarding",
   "authors": [
     {
       "name": "jgraph",
