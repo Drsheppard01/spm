@@ -2,7 +2,7 @@
   "name": "KeePassXC",
   "installname": "KeePassXC",
   "type": "AppImage",
-  "description": "keepassxc - KeePassXC is a cross-platform community-driven port of the Windows application Keepass Password Safe",
+  "description": "KeePassXC is a modern, secure, and open-source password manager that stores and manages your most sensitive information",
   "authors": [
     {
       "name": "keepassxreboot",

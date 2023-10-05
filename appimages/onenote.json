@@ -2,7 +2,7 @@
   "name": "onenote",
   "installname": "onenote",
   "type": "AppImage",
-  "description": "onenote - Linux Electron Onenote - A Linux compatible version of OneNote",
+  "description": "Linux Electron Onenote - A Linux compatible version of OneNote",
   "authors": [
     {
       "name": "patrikx3",

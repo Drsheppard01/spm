@@ -2,7 +2,7 @@
   "name": "kevedit",
   "installname": "kevedit",
   "type": "AppImage",
-  "description": "kevedit - KevEdit ZZT editor",
+  "description": "KevEdit is a ZZT editor that was under development from 2000-2005 by Kevin Vance and Ryan Phillips. It runs under DOS, Windows, macOS, and Linux.",
   "authors": [
     {
       "name": "cknave",

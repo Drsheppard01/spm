@@ -2,7 +2,7 @@
   "name": "Zulip",
   "installname": "zulip",
   "type": "AppImage",
-  "description": "zulip - Zulip Desktop Client",
+  "description": "Zulip combines the immediacy of real-time chat with an email threading model",
   "authors": [
     {
       "name": "zulip",
@@ -12,11 +12,11 @@
   "links": [
     {
       "type": "GitHub",
-      "url": "zulip/zulip-electron"
+      "url": "zulip/zulip-desktop"
     },
     {
       "type": "Install",
-      "url": "https://github.com/zulip/zulip-electron/releases"
+      "url": "https://github.com/zulip/zulip-desktop/releases"
     }
   ],
   "installinfo": [

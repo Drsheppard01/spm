@@ -2,7 +2,7 @@
   "name": "ksnip",
   "installname": "ksnip",
   "type": "AppImage",
-  "description": "ksnip - Ksnip is a Qt based Linux screenshot tool that provides many annotation features for your screenshots",
+  "description": "Ksnip is a Qt based Linux screenshot tool that provides many annotation features for your screenshots",
   "authors": [
     {
       "name": "DamirPorobic",
